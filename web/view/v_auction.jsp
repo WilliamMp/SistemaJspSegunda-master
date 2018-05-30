@@ -1,11 +1,7 @@
         <!-- page content -->
         
-        <script> 
-            int= a, b; 
-            a = 20;
-        </script>
                     
-                    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
                     
                     
                     
@@ -71,6 +67,7 @@
             
                 
                 <!-- Pricing List v4 -->
+                
                 <div class="pricing-list-v4 radius-10">
                     <div class="pricing-list-v4-header">
                         <h4 class="pricing-list-v4-title">Basic</h4>
@@ -79,15 +76,27 @@
                     <div class="pricing-list-v4-content">
                         <img src="images/jakola.jpg" alt="" class="img-rounded" widht="200" height="205">
                         <div class="margin-b-40">
-                            <button type="button" class="btn btn-default navbar-btn"disabled>$20.00</button>
+                            <input id="offFinal" type="text" class="btn btn-default navbar-btn"disabled value="20"></input>
                         </div>
                         <div class="center-block">
                            <div class="input-group">
                             <span class="input-group-addon">$</span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-addon">.00</span>
+                            <input id="oferta" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                   
                            </div>
-                            <button type="button" class="btn-dark-brd btn-base-sm radius-3">Ofertar</button>
+                            <button id="off" type="button" class="btn-dark-brd btn-base-sm radius-3">Ofertar</button>
+    <script>
+        $(document).ready(function(){
+            $("#off").click(function(){
+                var valOff = $("#oferta").val();
+                var valEnd = $("#offFinal").val();
+
+                if(valOff > valEnd){
+                    return $("#offFinal").val(valOff);
+                }
+            });
+        });
+    </script>
                         </div>
                     </div>
                 </div>
@@ -105,15 +114,27 @@
                     <div class="pricing-list-v4-content">
                         <img src="images/jakola.jpg" alt="" class="img-rounded" widht="200" height="205">
                         <div class="margin-b-40">
-                            <button type="button" class="btn btn-default navbar-btn" disabled>$20.00</button>
+                            <input id="offFinal1" type="text" class="btn btn-default navbar-btn"disabled value="20"></input>
                         </div>
                         <div class="center-block">
                            <div class="input-group">
                             <span class="input-group-addon">$</span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-addon">.00</span>
+                            <input id="oferta1" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                  
                            </div>
-                            <button type="button" class="btn-dark-brd btn-base-sm radius-3">Ofertar</button>
+                            <button id="off1" type="button" class="btn-dark-brd btn-base-sm radius-3">Ofertar</button>
+                                <script>
+        $(document).ready(function(){
+            $("#off1").click(function(){
+                var valOff = $("#oferta1").val();
+                var valEnd = $("#offFinal1").val();
+
+                if(valOff > valEnd){
+                    return $("#offFinal1").val(valOff);
+                }
+            });
+        });
+    </script>
                         </div>
                     </div>
                 </div>
@@ -129,15 +150,27 @@
                     <div class="pricing-list-v4-content">
                         <img src="images/jakola.jpg" alt="" class="img-rounded" widht="200" height="205">
                         <div class="margin-b-40">
-                            <button type="button" class="btn btn-default navbar-btn disabled">$20.00</button>
+                            <input id="offFinal2" type="text" class="btn btn-default navbar-btn"disabled value="20"></input>
                         </div>
                         <div class="center-block">
                            <div class="input-group">
                             <span class="input-group-addon">$</span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-addon">.00</span>
+                            <input id="oferta2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                  
                            </div>
-                            <button type="button" class="btn-dark-brd btn-base-sm radius-3">Ofertar</button>
+                            <button id="off2" type="button" class="btn-dark-brd btn-base-sm radius-3">Ofertar</button>
+                                <script>
+        $(document).ready(function(){
+            $("#off2").click(function(){
+                var valOff = $("#oferta2").val();
+                var valEnd = $("#offFinal2").val();
+
+                if(valOff > valEnd){
+                    return $("#offFinal2").val(valOff);
+                }
+            });
+        });
+    </script>
                         </div>
                     </div>
                 </div>

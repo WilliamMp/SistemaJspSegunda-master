@@ -58,18 +58,32 @@
     <tr>
       <th scope="row">1</th>
       <td>Conexão com banco de dados</td>
-      <td colspan="2">@mdo</td>
+      <td colspan="2">DONE</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
+      <td>Mudar Imagens do Auction e Produtos</td>
       <td colspan="2">@@mdo</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
+      <th scope="row">3</th>
+      <td>Adicionar graficos Iliustrativos</td>
       <td colspan="2">@@mdo</td>
     </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Melhorar a pagina do Auction, fazer a função funcionar</td>
+      <td colspan="2">@@mdo</td>
+    </tr>   
+     <tr>
+    <th scope="row">5</th>
+    <td>Na pagina Auction fazer exibir o valor da variavel A</td>
+      <td colspan="2">DONE</td>
+    </tr>
+    
+    
+    
+    
     
     
   </tbody>

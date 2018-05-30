@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>teste</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <img src="img/cervejinha.jpg" width="200px" height="200px" alt="cervejinhas ">
+
+    
+        <div>
+            <label for="oferta">Lance:</label>
+            Valor: R$ <input id="offFinal" width="15px" type="text" value="20"/><br/>
+            De seu lance:<input type="text" id="oferta" />
+            
+        </div>
+       <button id="off" type="button" >Ofertar </button>
+
+    <script>
+        $(document).ready(function(){
+            $("#off").click(function(){
+                var valOff = $("#oferta").val();
+                var valEnd = $("#offFinal").val();
+
+                if(valOff > valEnd){
+                    return $("#offFinal").val(valOff);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
