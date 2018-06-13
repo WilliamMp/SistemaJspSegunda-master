@@ -1,4 +1,9 @@
-        <!-- page content -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jqc-1.12.3/dt-1.10.16/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jqc-1.12.3/dt-1.10.16/datatables.min.js"></script>
+
+
+<!-- page content -->
         <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
@@ -44,9 +49,9 @@
                   </div>
                   <div class="x_content">
 
+                      <!--    datatable     -->
                       
-                      
-                      <table class="table table-bordered table-dark">
+    <table id="myTable" class="table display table-bordered table-dark">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -83,7 +88,17 @@
     
     
     
-    
+   <script>
+       $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+       </script>
+       
+       
+       
+       
+                             <!--    datatable     -->
+
     
     
   </tbody>
